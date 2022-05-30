@@ -1,0 +1,46 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.filter__item:hover,
+.filter__item:focus {
+  background: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__btn {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  color: $main-text-color;
+  background-color: $second-bg-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border: none;
+  &.app {
+    width: 145px;
+  }
+
+  &.current {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    cursor: pointer;
+    color: $white-color;
+  }
+}

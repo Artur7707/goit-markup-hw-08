@@ -1,0 +1,87 @@
+.footer {
+  background: $main-bg-color;
+}
+
+.footer-nav {
+  display: inline-block;
+}
+
+.footer-nav__item {
+  margin-bottom: 9px;
+}
+
+.logo__label--white {
+  color: $white-color;
+}
+
+.logo.footer {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-nav__adress {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $white-color;
+}
+
+.footer-nav__link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.adress-container {
+  margin-right: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer-social__item {
+  margin-right: 10px;
+}
+
+.footer-social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.footer-social__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-items: center;
+  fill: $white-color;
+}

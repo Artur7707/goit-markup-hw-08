@@ -1,0 +1,25 @@
+.examples {
+  display: flex;
+  justify-content: space-between;
+}
+
+.examples__item {
+  position: relative;
+  display: flex;
+}
+
+.examples__text {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 23%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-color;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}
