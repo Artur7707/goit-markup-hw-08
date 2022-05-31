@@ -776,6 +776,11 @@ p {
   opacity: 1;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
