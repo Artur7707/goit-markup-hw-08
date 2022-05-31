@@ -1,4 +1,10 @@
-.examples {
+.examples__section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.examples__list {
   display: flex;
   justify-content: space-between;
 }
