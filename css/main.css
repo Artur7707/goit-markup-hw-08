@@ -108,8 +108,15 @@ p {
 }
 
 .navigation {
-  display: flex;
   align-items: center;
+}
+
+.navigation {
+  display: none;
+}
+
+.contacts {
+  display: none;
 }
 
 .site-nav {
@@ -142,7 +149,6 @@ p {
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
   align-self: center;
 }
@@ -177,6 +183,18 @@ p {
   border-radius: 2px;
   position: absolute;
   bottom: -32px;
+}
+
+.menu-open-btn,
+.menu-close-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-open__icon,
+.menu-close-btn {
+  fill: #212121;
 }
 
 .section.features {
@@ -341,6 +359,12 @@ p {
   margin-top: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+
 .filter__item {
   margin-left: 8px;
   margin-top: 15px;
@@ -382,14 +406,15 @@ p {
   border-radius: 4px;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    margin: -15px;
+  }
 }
 
 .portfolio__item {

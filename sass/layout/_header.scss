@@ -4,8 +4,15 @@
 }
 
 .navigation {
-  display: flex;
+  // display: flex;
   align-items: center;
+}
+
+.navigation {
+  display: none;
+}
+.contacts {
+  display: none;
 }
 
 .site-nav {
@@ -39,7 +46,7 @@
 }
 
 .contacts {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   align-self: center;
 }
@@ -74,4 +81,16 @@
     position: absolute;
     bottom: -32px;
   }
+}
+
+.menu__open-btn,
+.menu__close-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.menu__open-icon,
+.menu__close-btn {
+  fill: $main-text-color;
 }
