@@ -185,16 +185,64 @@ p {
   bottom: -32px;
 }
 
-.menu-open-btn,
-.menu-close-btn {
+.menu__open-btn,
+.menu__close-btn {
   margin-left: auto;
   background-color: transparent;
   border: none;
 }
 
-.menu-open__icon,
-.menu-close-btn {
+.menu__open-icon,
+.menu__close-btn {
   fill: #212121;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.menu__close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.mobile-menu__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .section.features {
