@@ -1,6 +1,10 @@
 .team {
-  display: flex;
-  justify-content: space-between;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px 0;
+  }
 }
 
 .team__card {
@@ -9,17 +13,29 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @include untilTablet {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+    margin: 15px 0;
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
-.container.team {
-  background-color: $second-bg-color;
-}
-
-.section.team {
+.team__section {
   background-color: $second-bg-color;
 }
 
 .team__photo {
+  width: 100%;
   margin-bottom: 30px;
 }
 

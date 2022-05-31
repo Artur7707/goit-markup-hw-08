@@ -1,9 +1,12 @@
 .social {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 32px;
-  margin-bottom: 30px;
+  // display: flex;
+  // justify-content: space-between;
+  // margin-right: 32px;
+  // margin-left: 32px;
+  // margin-bottom: 30px;
+
+  display: inline-flex;
+  margin-bottom: 24px;
 }
 
 .social__link {
