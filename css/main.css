@@ -455,10 +455,13 @@ p {
 }
 
 .hero {
+  display: flex;
   background-color: #2f303a;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -485,6 +488,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200.jpg);
   }
 }
@@ -939,8 +943,8 @@ p {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -984,10 +988,6 @@ p {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-}
-
-.modal-field {
-  margin-top: 20px;
 }
 
 .modal__wrap {
@@ -1037,7 +1037,7 @@ p {
 
 .modal-check__text {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   align-items: center;
   position: relative;
   font-size: 14px;

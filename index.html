@@ -557,24 +557,26 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="modal-field">
-            <input
-              type="checkbox"
-              name="conditions"
-              id="conditions"
-              class="modal-check visually-hidden"
-            />
-            <label for="conditions" class="modal-check__text"
-              ><span>
-                <svg widht="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a href="./index.html"> Условия договора </a></label
-            >
+          <div class="modal-field__wrap">
+            <div class="modal-field">
+              <input
+                type="checkbox"
+                name="conditions"
+                id="conditions"
+                class="modal-check visually-hidden"
+              />
+              <label for="conditions" class="modal-check__text"
+                ><span>
+                  <svg widht="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю
+                <a href="./index.html"> Условия договора </a></label
+              >
+            </div>
+            <button type="submit" class="hero__button modal__btn">Отправить</button>
           </div>
-          <button type="submit" class="hero__button modal__btn">Отправить</button>
         </form>
       </div>
     </div>

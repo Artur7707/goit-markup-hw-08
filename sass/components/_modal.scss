@@ -25,8 +25,8 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -72,9 +72,9 @@
   margin-bottom: 4px;
 }
 
-.modal-field {
-  margin-top: 20px;
-}
+// .modal-field {
+//   margin-top: 20px;
+// }
 
 .modal__wrap {
   position: relative;
@@ -123,7 +123,7 @@
 
 .modal-check__text {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   align-items: center;
   position: relative;
   font-size: 14px;
