@@ -8,11 +8,11 @@
   align-items: center;
 }
 
-.navigation {
-  display: none;
-}
+.navigation,
 .contacts {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -115,6 +115,11 @@
   margin-right: 15px;
 }
 
+.menu__close-icon:hover,
+.menu__close-icon:focus {
+  fill: $accent-color;
+}
+
 .mobile-menu__container {
   display: flex;
   justify-content: space-between;
@@ -136,6 +141,11 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .menu-contacts {

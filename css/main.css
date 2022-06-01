@@ -116,12 +116,11 @@ p {
   align-items: center;
 }
 
-.navigation {
-  display: none;
-}
-
-.contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .navigation,
+  .contacts {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -221,6 +220,11 @@ p {
   margin-right: 15px;
 }
 
+.menu__close-icon:hover,
+.menu__close-icon:focus {
+  fill: #2196f3;
+}
+
 .mobile-menu__container {
   display: flex;
   justify-content: space-between;
@@ -240,6 +244,10 @@ p {
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
 }
 
 .menu-contacts {
