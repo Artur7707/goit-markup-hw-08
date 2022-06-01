@@ -810,12 +810,20 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -1064,6 +1072,14 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .email__button--icon {
