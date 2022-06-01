@@ -72,7 +72,14 @@ p {
 
 .container__nav {
   display: flex;
+  align-items: center;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .container__nav {
+    padding: 20px 0;
+  }
 }
 
 .section {
@@ -108,11 +115,17 @@ p {
 }
 
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #c4c4c4;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+
 .navigation {
+  display: flex;
   align-items: center;
 }
 
@@ -123,9 +136,11 @@ p {
   }
 }
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    margin-left: 90px;
+  }
 }
 
 .site-nav__item {
@@ -154,11 +169,24 @@ p {
 
 .contacts {
   margin-left: auto;
-  align-self: center;
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item + .contacts__item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
 }
 
 .contacts__link-icon {
@@ -186,7 +214,13 @@ p {
   border-bottom: 4px solid #2196f3;
   border-radius: 2px;
   position: absolute;
-  bottom: -32px;
+  bottom: -36px;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__link.current::after {
+    bottom: -28px;
+  }
 }
 
 .menu__open-btn,
@@ -194,6 +228,12 @@ p {
   margin-left: auto;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__open-btn {
+    display: none;
+  }
 }
 
 .menu__open-icon,
@@ -282,7 +322,7 @@ p {
   margin-right: 10px;
 }
 
-.mobile-menu__social-link {
+.mobile-menu__social-item:not(:last-child) .mobile-menu__social-link {
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
@@ -290,15 +330,19 @@ p {
   color: #2196f3;
 }
 
-.mobile-menu__social-link::after {
+.mobile-menu__social-item:not(:last-child) .mobile-menu__social-link::after {
   content: '';
   margin-left: 10px;
   height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.section.features {
-  padding-bottom: 0;
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {

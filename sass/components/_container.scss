@@ -19,5 +19,9 @@
 
 .container__nav {
   display: flex;
+  align-items: center;
   background-color: $white-color;
+  @include tablet {
+    padding: 20px 0;
+  }
 }
