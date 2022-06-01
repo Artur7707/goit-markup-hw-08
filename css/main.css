@@ -1095,10 +1095,12 @@ p {
   background-color: inherit;
 }
 
+.pic {
+  height: 100%;
+}
+
 .footer-input-wrap {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
