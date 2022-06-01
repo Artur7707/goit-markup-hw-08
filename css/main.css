@@ -807,16 +807,20 @@ p {
 }
 
 .footer-flex {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+
+.footer-social__wrap {
+  margin-bottom: 60px;
 }
 
 .footer-social {
   display: flex;
+  justify-content: center;
 }
 
 .adress-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .footer-title {
@@ -1023,10 +1027,6 @@ p {
   margin-right: auto;
 }
 
-.email {
-  margin-left: 93px;
-}
-
 .email__input {
   margin-right: 12px;
   width: 358px;
@@ -1063,5 +1063,9 @@ p {
 .email__button {
   display: flex;
   align-items: center;
+}
+
+.email__wrap {
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */

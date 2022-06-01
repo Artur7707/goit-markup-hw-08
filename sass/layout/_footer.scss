@@ -38,16 +38,23 @@
 }
 
 .footer-flex {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  // display: flex;
+  // align-items: baseline;
+}
+
+.footer-social__wrap {
+  margin-bottom: 60px;
 }
 
 .footer-social {
   display: flex;
+  justify-content: center;
 }
 
 .adress-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 
 .footer-title {
