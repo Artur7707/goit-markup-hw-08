@@ -83,8 +83,15 @@ p {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section-title {
@@ -1093,10 +1100,6 @@ p {
 .email__input:hover {
   outline: none;
   background-color: inherit;
-}
-
-.pic {
-  height: 100%;
 }
 
 .footer-input-wrap {
