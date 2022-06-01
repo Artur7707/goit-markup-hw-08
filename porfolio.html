@@ -21,10 +21,12 @@
   <body>
     <header class="header">
       <div class="container container__nav">
+        <a href="./index.html" class="logo"> <span class="logo__label">Web</span>Studio </a>
         <nav class="navigation">
-          <a href="./index.html" class="logo"> <span class="logo__label">Web</span>Studio </a>
           <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
+            </li>
             <li class="site-nav__item">
               <a href="./porfolio.html" class="site-nav__link current">Портфолио</a>
             </li>
@@ -48,6 +50,55 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu__open-btn">
+          <svg class="menu__open-icon" width="40" height="40">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden">
+        <div class="mobile-menu__container">
+          <button type="button" class="menu__close-btn">
+            <svg class="menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__wrap">
+            <ul class="mobile-menu__nav">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./porfolio.html" class="mobile-menu__link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="menu-contacts__wrap">
+            <ul class="menu-contacts">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:" class="menu-contacts__mail"> info@devstudio.com </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li class="mobile-menu__social-item">
+                <a href="https://www.instagram.com/" class="mobile-menu__social-link">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="https://www.twitter.com/" class="mobile-menu__social-link">Twitter</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="https://www.facebook.com/" class="mobile-menu__social-link">Facebook</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a href="https://www.linkedin.com/" class="mobile-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 

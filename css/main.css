@@ -242,6 +242,7 @@ p {
 }
 
 .mobile-menu {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -447,12 +448,10 @@ p {
 }
 
 .hero {
-  display: flex;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
