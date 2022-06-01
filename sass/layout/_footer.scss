@@ -1,4 +1,5 @@
 .footer {
+  padding: 60px 0;
   background: $main-bg-color;
 }
 
@@ -14,9 +15,8 @@
   color: $white-color;
 }
 
-.logo.footer {
+.logo__footer {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -39,6 +39,12 @@
 
 .footer-flex {
   text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
   // display: flex;
   // align-items: baseline;
 }

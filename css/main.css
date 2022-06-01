@@ -769,6 +769,7 @@ p {
 }
 
 .footer {
+  padding: 60px 0;
   background: #2f303a;
 }
 
@@ -784,9 +785,8 @@ p {
   color: #ffffff;
 }
 
-.logo.footer {
+.logo__footer {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -808,6 +808,15 @@ p {
 
 .footer-flex {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .footer-social__wrap {
@@ -1029,6 +1038,7 @@ p {
 
 .email__input {
   margin-right: 12px;
+  margin-bottom: 20px;
   width: 358px;
   padding-left: 16px;
   height: 50px;
@@ -1051,6 +1061,9 @@ p {
 .footer-input-wrap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .email__button--icon {
@@ -1063,9 +1076,5 @@ p {
 .email__button {
   display: flex;
   align-items: center;
-}
-
-.email__wrap {
-  margin-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
