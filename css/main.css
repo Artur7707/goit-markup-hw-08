@@ -846,16 +846,13 @@ p {
   color: #ffffff;
 }
 
-.footer-flex {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    text-align: center;
   }
 }
 
@@ -867,8 +864,10 @@ p {
   }
 }
 
-.footer-social__wrap {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer-social__wrap {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social {

@@ -38,12 +38,12 @@
 }
 
 .footer-flex {
-  text-align: center;
   @media screen and(min-width:768px) and(max-width:1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    text-align: center;
   }
   @include desktop {
     display: flex;
@@ -53,7 +53,9 @@
 }
 
 .footer-social__wrap {
-  margin-bottom: 60px;
+  @include untilTablet {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social {
