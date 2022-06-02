@@ -90,7 +90,6 @@ p {
 @media screen and (min-width: 1200px) {
   .section {
     padding-bottom: 94px;
-    padding-top: 94px;
   }
 }
 
@@ -358,7 +357,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: -15px 0;
   }
 }
 
@@ -393,11 +391,16 @@ p {
 }
 
 .features__title {
-  text-align: center;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -763,12 +766,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: -15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients {
-    margin: 0;
-  }
 }
 
 .clients__item {
