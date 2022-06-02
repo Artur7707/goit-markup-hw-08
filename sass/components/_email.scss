@@ -3,9 +3,12 @@
 // }
 
 .email__input {
+  @include desktop {
+    width: 358px;
+  }
   margin-right: 12px;
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -46,6 +49,8 @@
   align-items: center;
 }
 
-// .email__wrap {
-//   margin-bottom: 60px;
-// }
+.email__wrap {
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+}

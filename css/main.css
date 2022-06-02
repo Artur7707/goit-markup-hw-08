@@ -603,6 +603,7 @@ p {
 
 .portfolio__item {
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -660,13 +661,12 @@ p {
 }
 
 .portfolio__thumb {
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
 
 .porfolio__box {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 0px 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -740,11 +740,11 @@ p {
 
 .team__photo {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .team__member {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -961,12 +961,6 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 100%;
-  }
-}
-
 .modal__button--close {
   display: flex;
   justify-content: center;
@@ -1053,7 +1047,7 @@ p {
   margin-bottom: 20px;
   align-items: center;
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1096,7 +1090,7 @@ p {
 .email__input {
   margin-right: 12px;
   margin-bottom: 20px;
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1104,6 +1098,12 @@ p {
   background-color: #2f303a;
   border-radius: 4px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .email__input {
+    width: 358px;
+  }
 }
 
 .email__input::placeholder {
@@ -1139,5 +1139,11 @@ p {
 .email__button {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .email__wrap {
+    width: 450px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

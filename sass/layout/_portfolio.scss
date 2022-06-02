@@ -9,6 +9,7 @@
 
 .portfolio__item {
   margin-bottom: 30px;
+  flex-grow: 1;
 
   @include tablet {
     display: flex;
@@ -62,13 +63,13 @@
 }
 
 .portfolio__thumb {
-  height: 294px;
+  // height: 294px;
   position: relative;
   overflow: hidden;
 }
 
 .porfolio__box {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 0px 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
