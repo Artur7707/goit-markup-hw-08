@@ -89,6 +89,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .section {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -350,6 +351,12 @@ p {
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.features {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
