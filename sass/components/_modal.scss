@@ -25,6 +25,9 @@
 }
 
 .modal {
+  @include untilTablet {
+    width: 100%;
+  }
   width: 450px;
   height: 609px;
   padding: 40px;
