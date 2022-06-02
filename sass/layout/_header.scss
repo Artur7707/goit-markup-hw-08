@@ -35,7 +35,7 @@
 .site-nav__link,
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -90,10 +90,10 @@
     border-bottom: 4px solid $accent-color;
     border-radius: 2px;
     position: absolute;
-    bottom: -36px;
+    bottom: -41px;
 
     @include desktop {
-      bottom: -28px;
+      bottom: -33px;
     }
   }
 }

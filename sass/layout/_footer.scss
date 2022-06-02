@@ -67,8 +67,9 @@
 }
 
 .adress-container {
-  margin-bottom: 60px;
-  // margin-right: 70px;
+  @media screen and(max-width:1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-title {

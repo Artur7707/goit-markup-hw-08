@@ -78,7 +78,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .container__nav {
-    padding: 20px 0;
+    padding: 24px 0;
   }
 }
 
@@ -160,7 +160,7 @@ p {
 .site-nav__link,
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -220,12 +220,12 @@ p {
   border-bottom: 4px solid #2196f3;
   border-radius: 2px;
   position: absolute;
-  bottom: -36px;
+  bottom: -41px;
 }
 
 @media screen and (min-width: 1200px) {
   .site-nav__link.current::after {
-    bottom: -28px;
+    bottom: -33px;
   }
 }
 
@@ -880,8 +880,10 @@ p {
   justify-content: center;
 }
 
-.adress-container {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .adress-container {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-title {
