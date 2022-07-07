@@ -38,26 +38,6 @@
     background-position: center;
     background-color: $second-bg-color;
   }
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-}
-
-.features__title {
-  @include untilTablet {
-    text-align: center;
-  }
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.features__text {
-  font-size: 14px;
-  line-height: 1.71;
-  color: $secondary-text-color;
 }
 
 .icon-antenna::before {
@@ -74,4 +54,20 @@
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
+}
+
+.features__title {
+  @include untilTablet {
+    text-align: center;
+  }
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-text-color;
 }
